@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>SQL Server Data Warehouse</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+   <style>
+        .slideshow {
+            position: relative;
+            max-width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            transition: opacity 0.5s ease;
+        }
+        .slide.active {
+            display: block;
+        }
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            opacity: 0.6;
+            transition: opacity 0.3s;
+        }
+        .slideshow:hover .controls {
+            opacity: 1;
+        }
+        .controls button {
+            background: rgba(200, 200, 200, 0.6);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+        .controls button:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <header id="header">
+            <a href="https://github.com/alysahab/SQL-Server-Data-Warehouse-Project" target="_blank" class="logo">SQL Server Data Warehouse</a>
+        </header>
+
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="generic.html">Resume</a></li>
+                <!-- <li><a href="elements.html">Contact</a></li> -->
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/alysahab" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+<div id="main">
+
+    <section class="post">
+        <header class="major">
+            <span class="date">May 2026</span>
+            <h1>SQL Server Data Warehouse Project</h1>
+            <p>A scalable end-to-end Data Warehouse solution utilizing Medallion Architecture and Stored Procedure ETL logic.</p>
+        </header>
+
+        <!-- Project Image -->
+        <span class="image main"><img src="images/SQL server Data Warehouse Architecture.png" alt="Data Warehouse Architecture" /></span>
+
+        <div class="box">
+            <h2>Project Overview</h2>
+            <p>This project demonstrates the implementation of a modern Data Warehouse in <strong>Microsoft SQL Server</strong>. Following the <strong>Medallion Architecture</strong>, raw data from CRM and ERP systems is transformed through Bronze, Silver, and Gold layers to create a high-performance Star Schema for business intelligence.</p>
+        </div>
+
+        <div class="box">
+            <h2>Medallion Architecture Layers</h2>
+            <div class="row">
+                <div class="col-4 col-12-medium">
+                    <h3>Bronze 🥉</h3>
+                    <p><strong>Raw Ingestion:</strong> Ingests CSV files from source systems without modification to maintain data lineage.</p>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <h3>Silver 🥈</h3>
+                    <p><strong>Standardization:</strong> Cleanses data, handles nulls, and applies business validation rules.</p>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <h3>Gold 🥇</h3>
+                    <p><strong>Analytics:</strong> Models data into Fact and Dimension tables optimized for reporting and ML.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Project Structure</h2>
+            <!-- Using pre/code ensures the folder structure looks technical and clean -->
+            <pre><code>SQL-Server-Data-Warehouse-Project/
+    ├── 01_bronze/      # Raw ingestion layer
+    ├── 02_silver/      # Cleaned & transformed layer
+    ├── 03_gold/        # Business-ready views
+    ├── docs/           # Architecture diagram
+    └── README.md</code></pre>
+        </div>
+
+        <div class="box">
+            <h2>Tech Stack & Concepts</h2>
+            <div class="row">
+                <div class="col-6 col-12-small">
+                    <ul class="list">
+                        <li><strong>Database:</strong> MS SQL Server</li>
+                        <li><strong>Language:</strong> T-SQL</li>
+                        <li><strong>Modeling:</strong> Star Schema</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-12-small">
+                    <ul class="list">
+                        <li><strong>ETL:</strong> Stored Procedures</li>
+                        <li><strong>Optimization:</strong> Aggregated Views</li>
+                        <li><strong>Planning:</strong> Notion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2>Business Value</h2>
+        <div class="table-wrapper">
+            <table class="alt">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Value Proposition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Reliability</td>
+                        <td>Layered transformations ensure validated, high-quality data.</td>
+                    </tr>
+                    <tr>
+                        <td>Scalability</td>
+                        <td>Reusable warehouse design that accommodates growing data volumes.</td>
+                    </tr>
+                    <tr>
+                        <td>Performance</td>
+                        <td>Optimized for BI tools via Gold-layer views.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <ul class="actions special">
+            <li><a href="https://github.com/alysahab/SQL-Server-Data-Warhouse-Project" class="button icon solid fa-code" target="_blank">Source Code</a></li>
+        </ul>
+    </section>
+    </div>
+
+</body>
+</html>
